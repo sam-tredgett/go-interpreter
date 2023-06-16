@@ -1,14 +1,11 @@
 package parser
 
-
-// to be written - once and once only. After this i'm using a parser-generator.
 import (
     "fmt"
     "Monkey/ast"
     "Monkey/lexer"
     "Monkey/token"
 )
-
 
 type Parser struct {
     l *lexer.Lexer
@@ -27,7 +24,6 @@ func New(l *lexer.Lexer) *Parser {
     
     return p
 }
-
 
 func (p *Parser) Errors() []string {
     return p.errors
@@ -57,7 +53,6 @@ func (p *Parser) ParseProgram() *ast.Program {
     }
     return program
 }
-
 
 func (p *Parser) parseStatement() ast.Statement {
     switch p.curToken.Type {
@@ -98,12 +93,6 @@ func (p *Parser) parseReturnStatement() *ast.ReturnStatement {
     }
     return stmt
 }
-
-
-
-
-
-
 
 func (p *Parser) curTokenIs(t token.TokenType) bool {
     return p.curToken.Type == t
