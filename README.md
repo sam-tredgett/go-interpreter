@@ -1,6 +1,6 @@
-# golang-interpreter
+# Go Interpreter
 
-This is a semi-functional interpreter built based on principles of top-down parsing
+This is a semi-functional interpreter built on the principles of top-down parsing
 and tree-walking interpretation. 
 
 The fictional language MonkeyLang is a lisp style language that includes functions 
@@ -9,7 +9,7 @@ representations.
 
 ## In progress:
     - Extending data types to include strings, arrays and HashMaps
-    - Implementing rudimentary Garbage Collecition
+    - Implementing rudimentary Garbage Collection
 
 
 
@@ -23,4 +23,9 @@ representations.
         -- Assembler
         -- Basic build tools 
         -- LSP?
+
+
+
+Note to the reader:
+Please feel free to fork, submit pull requests, and download and use code as you see fit.
 
