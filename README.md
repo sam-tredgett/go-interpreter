@@ -1,6 +1,26 @@
 # golang-interpreter
-Simple interpreter built off of the back of the fantastic work of Thorsten Ball, first-class functions,
-almost everything is an expression, written using TDOP parsing. Using this as a dummy project to rehash understanding
-of Backus Naur Form and how parsing a context-free grammer works in practise. Fork or reuse as you wish,
-ideas are not my own, i'll write an interpreter + compiler from scratch in another language based on the knowledge
-i gain from using this book/project.
+
+This is a semi-functional interpreter built based on principles of top-down parsing
+and tree-walking interpretation. 
+
+The fictional language MonkeyLang is a lisp style language that includes functions 
+as first-class citizens, closures, higher order functions, and basic int/boolean
+representations.
+
+## In progress:
+    - Extending data types to include strings, arrays and HashMaps
+    - Implementing rudimentary Garbage Collecition
+
+
+
+## Distant future:
+    - Interpreter -> Compiler
+
+
+## Distant distant future:
+    - Fork and rewrite as a C/C++ implementation with:
+        -- Linker
+        -- Assembler
+        -- Basic build tools 
+        -- LSP?
+
