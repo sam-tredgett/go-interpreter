@@ -14,9 +14,9 @@ const (
 	EOF     = "EOF"
 
 	// Identifiers + literals
-	IDENT = "IDENT" // add, foobar, x, y, ...
-	INT   = "INT"   // 1343467
-    STRING = "STRING"
+	IDENT  = "IDENT" // add, foobar, x, y, ...
+	INT    = "INT"   // 1343467
+	STRING = "STRING"
 
 	// Operators
 	ASSIGN   = "="
@@ -32,10 +32,12 @@ const (
 	// Delimiters
 	COMMA     = ","
 	SEMICOLON = ";"
-	LPAREN = "("
-	RPAREN = ")"
-	LBRACE = "{"
-	RBRACE = "}"
+	LPAREN    = "("
+	RPAREN    = ")"
+	LBRACE    = "{"
+	RBRACE    = "}"
+	LBRACKET  = "["
+	RBRACKET  = "]"
 
 	// Keywords
 	FUNCTION = "FUNCTION"
@@ -46,8 +48,8 @@ const (
 	ELSE     = "ELSE"
 	RETURN   = "RETURN"
 
-	EQ = "=="
-    NOT_EQ = "!="
+	EQ     = "=="
+	NOT_EQ = "!="
 )
 
 var keywords = map[string]TokenType{
@@ -57,7 +59,7 @@ var keywords = map[string]TokenType{
 	"false":  FALSE,
 	"if":     IF,
 	"else":   ELSE,
-    "return": RETURN,
+	"return": RETURN,
 }
 
 // LookupIdent checks the keywords table t see whether the given identifier is in fact a keyword. If it is, return the keyword's TokenType
