@@ -7,9 +7,8 @@ The fictional language MonkeyLang is a lisp style language that includes functio
 as first-class citizens, closures, higher order functions, and basic int/boolean
 representations.
 
-## In progress:
-    - Extending data types to include strings, arrays and HashMaps
-    - Implementing rudimentary Garbage Collection
+## State
+This project is now fully inline with the final production of the Interpreter Book by Thorsten Ball, Compiler book project will be done as a fork of this repo.
 
 
 
